@@ -9,13 +9,14 @@
 import pandas as pd
 import os
 import numpy as np
+from utils import KEY, VALUE
 
 RAW_DATA_PATH = "./data/raw_data"
 PROCESSED_DATA_PATH = "./data/processed"
 # deprecate Name,Cabin,PassengerId
-KEY = ['HomePlanet', 'CryoSleep', 'Destination', 'Age',
-       'VIP', 'RoomService', 'FoodCourt', 'ShoppingMall', 'Spa', 'VRDeck']
-VALUE = 'Transported'  # label
+# KEY = ['HomePlanet', 'CryoSleep', 'Destination', 'Age',
+#        'VIP', 'RoomService', 'FoodCourt', 'ShoppingMall', 'Spa', 'VRDeck']
+# VALUE = 'Transported'  # label
 file_names = ['train.csv', 'test.csv']
 
 for file_name in file_names:
